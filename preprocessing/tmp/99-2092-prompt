@@ -1,0 +1,112 @@
+<Context>
+You receive a selection in neovim that you need to replace with new code.
+The selection's contents may contain notes, incorporate the notes every time if there are some.
+consider the context of the selection and what you are suppose to be implementing
+<SELECTION_LOCATION>
+range(point(51,1),point(54,1))
+</SELECTION_LOCATION>
+<SELECTION_CONTENT>
+
+
+
+
+</SELECTION_CONTENT>
+<SURROUNDING_CONTEXT>
+# ---
+# jupyter:
+#   kernelspec:
+#     display_name: Python 3
+#     language: python
+#     name: python3
+#   language_info:
+#     name: python
+# ---
+
+# %% [markdown]
+# # **1. Perkenalan Dataset**
+
+# %% [markdown]
+# Tahap pertama, Anda harus mencari dan menggunakan dataset dengan ketentuan sebagai berikut:
+#
+# 1. **Sumber Dataset**:  
+#   Dataset yang saya gunakan dalam eksperimen ini merupakan dataset titanic yang saya dapatkan dari public repositories github. Dataset ini berisi informasi tentang penumpang kapal Titanic, termasuk fitur-fitur seperti usia, jenis kelamin, kelas tiket, dan status kelangsungan hidup. Berikut link repositori dataset yang saya gunakan: [Titanic Dataset](https://github.com/datasciencedojo/datasets/blob/master/titanic.csv) 
+
+
+# %% [markdown]
+# # **2. Import Library**
+# Pada tahap ini, Anda perlu mengimpor beberapa pustaka (library) Python yang dibutuhkan untuk analisis data dan pembangunan model machine learning atau deep learning.
+# %%
+import pandas as pd
+import numpy as np
+
+# %% [markdown]
+# # **3. Memuat Dataset**
+# %% [markdown]
+# Pada tahap ini, Anda perlu memuat dataset ke dalam notebook. Jika dataset dalam format CSV, Anda bisa menggunakan pustaka pandas untuk membacanya. Pastikan untuk mengecek beberapa baris awal dataset untuk memahami strukturnya dan memastikan data telah dimuat dengan benar.
+
+# Jika dataset berada di Google Drive, pastikan Anda menghubungkan Google Drive ke Colab terlebih dahulu. Setelah dataset berhasil dimuat, langkah berikutnya adalah memeriksa kesesuaian data dan siap untuk dianalisis lebih lanjut.
+#
+# Jika dataset berupa unstructured data, silakan sesuaikan dengan format seperti kelas Machine Learning Pengembangan atau Machine Learning Terapan
+
+
+# %%
+df = pd.read_csv('../titanic.csv')
+df.head()
+
+
+# %% [markdown]
+# # **4. Exploratory Data Analysis (EDA)**
+#
+# Pada tahap ini, Anda akan melakukan **Exploratory Data Analysis (EDA)** untuk memahami karakteristik dataset.
+# Tujuan dari EDA adalah untuk memperoleh wawasan awal yang mendalam mengenai data dan menentukan langkah selanjutnya dalam analisis atau pemodelan.
+
+# %%
+#Type your code here
+
+
+
+
+
+# %% [markdown]
+# # **5. Data Preprocessing**
+
+# %% [markdown]
+# Pada tahap ini, data preprocessing adalah langkah penting untuk memastikan kualitas data sebelum digunakan dalam model machine learning.
+#
+# Jika Anda menggunakan data teks, data mentah sering kali mengandung nilai kosong, duplikasi, atau rentang nilai yang tidak konsisten, yang dapat memengaruhi kinerja model. Oleh karena itu, proses ini bertujuan untuk membersihkan dan mempersiapkan data agar analisis berjalan optimal.
+#
+# Berikut adalah tahapan-tahapan yang bisa dilakukan, tetapi **tidak terbatas** pada:
+# 1. Menghapus atau Menangani Data Kosong (Missing Values)
+# 2. Menghapus Data Duplikat
+# 3. Normalisasi atau Standarisasi Fitur
+# 4. Deteksi dan Penanganan Outlier
+# 5. Encoding Data Kategorikal
+# 6. Binning (Pengelompokan Data)
+#
+# Cukup sesuaikan dengan karakteristik data yang kamu gunakan yah. Khususnya ketika kami menggunakan data tidak terstruktur.
+
+# %%
+</SURROUNDING_CONTEXT>
+
+</Context>
+<Prompt>
+lakukan eda untuk dataset ini
+</Prompt>
+
+<Location><File>/home/fadhil/git/digdaya-bi/SMSML/Eksperimen_SML_Muhammad_Fadhil_Syahputra/preprocessing/Eksperimen_Muhammad_Fadhil_Syahputra.ju.py</File><Function>range(point(51,1),point(54,1))</Function></Location>
+<FunctionText>
+
+
+</FunctionText>
+<TEMP_FILE>./tmp/99-2092</TEMP_FILE>
+<MustObey>
+NEVER alter any file other than TEMP_FILE.
+never provide the requested changes as conversational output. Return only the code.
+ONLY provide requested changes by writing the change to TEMP_FILE
+
+never attempt to read TEMP_FILE.
+It is purely for output.
+Previous contents, which may not exist, can be written over without worry
+After writing TEMP_FILE once you should be done.  Be done and end the session.
+
+</MustObey>
